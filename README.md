@@ -6,7 +6,7 @@ Reverse engineered as part of a bigger project to learn more about the Tibia 7.1
 - U16 Sprite sheet count (SSC)
 - SpriteSheet[SSC] sprite sheets
 
-###Sprite sheet structure:
+### Sprite sheet structure:
 - U8 Width (W)
 - U8 Height (H)
 - U8 Transparent R
@@ -15,7 +15,7 @@ Reverse engineered as part of a bigger project to learn more about the Tibia 7.1
 - U32[W * H] Byte offsets of the .pic file where the sprite sheet's parts start,
 these are stored from left to right for every row, where a single sprite part is 32x32 pixels
 
-###Reading a sprite sheet:
+### Reading a sprite sheet:
 Every sprite sheet part is 32x32.
 
     Loop through the byte offsets (b)
